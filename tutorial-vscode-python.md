@@ -139,7 +139,7 @@ Resultado esperado:
 ```text
 Hola Mundo
 ```
-🎉 ¡Acabas de ejecutar tu primer programa en Python!
+### 🎉 ¡Acabas de ejecutar tu primer programa en Python!
 ---
 
 # ⭐ Bonus: Hola Mundo personalizado
@@ -165,4 +165,4 @@ Hola Jose, bienvenida a Python
 ```
 ---
 
-🏆 ¡Felicitaciones! Ya tienes tu entorno listo para comenzar a programar en Python.
+# 🏆 **¡Felicitaciones! Ya tienes tu entorno listo para comenzar a programar en Python.**
