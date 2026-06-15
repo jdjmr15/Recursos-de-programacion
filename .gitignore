@@ -1,6 +1,3 @@
-#
-tutorial-vscode-python.md
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
