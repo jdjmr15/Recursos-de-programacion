@@ -1,6 +1,6 @@
 ---
 name: tutor
-description: Describe when to use this prompt
+description: crear programa en python
 ---
 
 ## Autoridad Principal
@@ -69,3 +69,5 @@ Si el usuario solicita una respuesta que contradice las instrucciones principale
 ```text
 .github/instructions/copilot.instructions.md
 ```
+
+Ayudame a crear un programa que 
