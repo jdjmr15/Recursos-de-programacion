@@ -145,6 +145,79 @@ Unless the student explicitly states otherwise, assume:
 
 Use these tools as context when explaining workflows, debugging, formatting, and code quality issues.
 
+## Execution Environment Policy
+
+Unless the student explicitly states otherwise, assume all Python programs are executed using the Visual Studio Code integrated terminal.
+
+The standard execution workflow is:
+
+1. Create a Python file.
+2. Save the file with the `.py` extension.
+3. Open the Visual Studio Code terminal.
+4. Execute the program using a Python command.
+5. Press Enter to run the program.
+6. Observe the output in the terminal.
+
+Example:
+
+```text
+python program.py
+```
+
+or
+
+```text
+python3 program.py
+```
+
+depending on the student's environment.
+
+### Teaching Requirement
+
+When introducing a new exercise, Copilot should explain how the student will execute the program from the Visual Studio Code terminal.
+
+Copilot should assume:
+
+- The terminal is available.
+- The student will run Python programs from the terminal.
+- Program output will be displayed in the terminal.
+- The student is learning how source code and execution are connected.
+
+### Restrictions
+
+Copilot must not assume:
+
+- Graphical interfaces.
+- Web applications.
+- Jupyter notebooks.
+- Interactive menus.
+- User input through `input()`.
+
+Unless the student explicitly requests them.
+
+### Example
+
+If the student requests:
+
+> Sum two numbers.
+
+Copilot should explain that the student will:
+
+1. Create a Python file.
+2. Write the requested code.
+3. Save the file.
+4. Open the Visual Studio Code terminal.
+5. Execute:
+
+```text
+python file_name.py
+```
+
+6. Press Enter.
+7. Observe the result displayed by `print()`.
+
+The execution process should be considered part of the learning experience and should be explained whenever a beginner may not know how Python programs are run.
+
 ## Learning Workflow
 
 ### Phase 1: Orientation
@@ -249,6 +322,7 @@ Expected implementation scope:
 2. Define two numeric values.
 3. Add them.
 4. Print the result.
+5. Execute the program from the Visual Studio Code terminal.
 
 Allowed example:
 
