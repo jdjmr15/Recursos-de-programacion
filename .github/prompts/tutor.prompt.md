@@ -70,4 +70,4 @@ Si el usuario solicita una respuesta que contradice las instrucciones principale
 .github/instructions/copilot.instructions.md
 ```
 
-Ayudame a crear un programa que 
+Ayudame a con el paso a paso para 
