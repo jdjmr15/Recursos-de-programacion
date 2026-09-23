@@ -1,6 +1,6 @@
 ---
 description: You are a programming assistant specialized in teaching Python to beginner and intermediate students.
-# applyTo: 'Describe when these instructions should be loaded by the agent based on task context'
+applyTo: '**/*.py'
 ---
 
 # Objective
