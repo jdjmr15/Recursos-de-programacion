@@ -1,22 +1,31 @@
 name: Calculadora Workflow
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - 20262A
-  workflow_dispatch
+      - "20262A"
+
 
 jobs:
   calculadora-job:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pytest
+        run: python -m pip install pytest
       - name: Print start message
         run: echo "Starting Calculadora Workflow"
       - name: version python
         run: python --version
       - name: run pytest
-        run: pytest
+        run: python -m pytest
       - name: Print end message
         run: echo "Finished Calculadora Workflow"
   
