@@ -2,9 +2,9 @@ name: Calculadora Workflow
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - "20262A"
+#  push:
+#    branches:
+#      - "20262A"
 
 
 jobs:

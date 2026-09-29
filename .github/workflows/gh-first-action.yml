@@ -9,5 +9,9 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello, world!"
+      - name: Menssage multiple lines
+        run: |
+          echo "This is a message"
+          echo "spanning multiple lines"
       - name: Print goodbye
         run: echo "Goodbye, world!"
