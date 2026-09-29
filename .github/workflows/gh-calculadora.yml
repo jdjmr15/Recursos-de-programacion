@@ -1,0 +1,22 @@
+name: Calculadora Workflow
+
+on:
+  push:
+    branches:
+      - 20262A
+  workflow_dispatch
+
+jobs:
+  calculadora-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print start message
+        run: echo "Starting Calculadora Workflow"
+      - name: version python
+        run: python --version
+      - name: run pytest
+        run: pytest
+      - name: Print end message
+        run: echo "Finished Calculadora Workflow"
+  
