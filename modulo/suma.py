@@ -1,0 +1,2 @@
+def sumar():
+    return 'Sumar'
