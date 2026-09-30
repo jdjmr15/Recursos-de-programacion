@@ -1,6 +1,6 @@
 
-from modulo import sumar
+from modulo import resta
 
 
-def test_sumar():
-    assert sumar() == "sumar"
+def test_restar():
+    assert resta() == "restar"
