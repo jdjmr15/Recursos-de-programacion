@@ -1,25 +1,33 @@
 def main():
+    operador = ""
     print("Bienvenidos a mi primera calculadora en Python, espero que les guste.")
     print("")
     operacion = input("¿Qué operación deseas realizar? (+, -. *. /): ")
     print("")
-    numero1 = float(input("Ingrese el primer valor : "))
-    numero2 = float(input("Ingrese el segundo valor : "))
+    num1 = float(input("Ingrese el primer valor : "))
+    num2 = float(input("Ingrese el segundo valor : "))
 
     print("")
-    if operacion == "+":
-        print("Resultado de la suma", numero1 + numero2)
-    elif operacion == "-":
-        
-        print("Resultado de la resta", numero1 - numero2)
-    elif operacion == "*":
-        
-        print("Resultado de la multiplicación", numero1 * numero2)
-    elif operacion == "/":
-        
-        print("Resultado de la divisón", numero1 / numero2)
+
+    match operacion:
+        case '+':
+            resultado = num1 + num2
+        case '-':
+            resultado = num1 - num2
+        case '*':
+            resultado = num1 * num2
+        case '/':
+            if num2 != 0:
+                resultado = num1 / num2
+            else:
+                resultado = num1 / 1
+        case _:
+            operador = 'error'
+
+    if operador != 'error':
+        print(f"Resultado del operador '{operacion}' es: {resultado}")
     else:
-        print("Operación no válida")
+        print(f"Error al elegir el operador. Los operadores son +, -, *, y /")
 
     print("Hasta luego")
     print("")
