@@ -1,0 +1,2 @@
+def restar():
+    return 'Restar'

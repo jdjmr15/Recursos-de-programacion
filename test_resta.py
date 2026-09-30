@@ -3,4 +3,4 @@ from modulo import sumar
 
 
 def test_sumar():
-    assert sumar() == "Sumar"
+    assert sumar() == "sumar"
